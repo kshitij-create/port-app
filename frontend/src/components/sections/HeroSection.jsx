@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="max-w-2xl">
           {/* Main Heading */}
           <h1 className="font-serif text-5xl md:text-7xl font-medium text-[#1E3A5F] mb-6 leading-tight">
-            Hi, I'm {personalInfo.name}.
+            Hi, I&apos;m {personalInfo.name}.
           </h1>
 
           {/* Tagline */}
