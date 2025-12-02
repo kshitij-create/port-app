@@ -51,7 +51,7 @@ const ProjectsSection = () => {
             My Work
           </h2>
           <p className="mt-4 text-[#1E3A5F]/70 text-lg max-w-xl">
-            A selection of projects I've worked on, from mobile apps to web experiences.
+            A selection of projects I&apos;ve worked on, from mobile apps to web experiences.
           </p>
         </div>
 
