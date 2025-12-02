@@ -10,18 +10,18 @@
 }
 
 .App-header {
-    background-color: #0f0f10;
+    background-color: #F5F3EE;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #1E3A5F;
 }
 
 .App-link {
-    color: #61dafb;
+    color: #E85D3C;
 }
 
 @keyframes App-logo-spin {
@@ -31,4 +31,75 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Custom Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll {
+    0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(4px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+
+.animate-scroll {
+    animation: scroll 2s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background-color: #E85D3C;
+    color: white;
+}
+
+/* Focus states */
+*:focus-visible {
+    outline: 2px solid #E85D3C;
+    outline-offset: 2px;
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Apply fonts */
+.font-serif {
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }
