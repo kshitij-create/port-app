@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { projectsData } from '../../data/mockData';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { Button } from '../ui/button';
 
 const ProjectCard = ({ project }) => {
   return (
