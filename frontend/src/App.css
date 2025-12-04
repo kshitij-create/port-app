@@ -148,6 +148,7 @@
     animation: slideInRight 0.5s ease-out forwards;
 }
 
+<<<<<<< HEAD
 @keyframes float-animation {
     0%, 100% {
         transform: translateY(0px);
@@ -161,6 +162,8 @@
     animation: float-animation 3s ease-in-out infinite;
 }
 
+=======
+>>>>>>> 9938ea66bd80c8b036cc19b23499e0d4856481bd
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;

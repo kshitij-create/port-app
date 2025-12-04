@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "sonner";
@@ -26,6 +26,32 @@ const Portfolio = () => {
 };
 
 function App() {
+  useEffect(() => {
+    const scriptId = "relevanceai-chat-bubble";
+    if (document.getElementById(scriptId)) {
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.id = scriptId;
+    script.defer = true;
+    script.src = "https://app.relevanceai.com/embed/chat-bubble.js";
+    script.setAttribute(
+      "data-relevanceai-share-id",
+      "d7b62b/e5082f0b-7a59-4e8f-8671-2c54baa12a17/07940c82-90a9-4d4d-a68b-e378d044aca3"
+    );
+    script.setAttribute(
+      "data-share-styles",
+      "bubble_position=bottom_right&hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23ff9061&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false&hide_description=false"
+    );
+
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
   return (
     <div className="App">
       <Toaster position="top-right" richColors />
