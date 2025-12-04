@@ -41,7 +41,7 @@ const AboutSection = () => {
             </div>
 
             {/* Skills */}
-            <div className="mt-10">
+            <div className="mt-14">
               <h3 className="text-sm font-semibold text-[#E85D3C] uppercase tracking-wider mb-4">
                 Skills & Expertise
               </h3>
@@ -49,7 +49,11 @@ const AboutSection = () => {
                 {aboutData.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-[#1E3A5F]/5 text-[#1E3A5F] rounded-full text-sm font-medium hover:bg-[#1E3A5F]/10 transition-colors cursor-default"
+                    className="px-4 py-2 bg-[#1E3A5F]/5 text-[#1E3A5F] rounded-full text-sm font-medium hover:bg-[#1E3A5F]/10 transition-colors cursor-default float-animation"
+                    style={{
+                      animationDelay: `${index * 0.15}s`,
+                      animationDuration: '3s',
+                    }}
                   >
                     {skill}
                   </span>

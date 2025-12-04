@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { projectsData } from '../../data/mockData';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { Button } from '../ui/button';
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="group cursor-pointer">
+      
       {/* Project Image */}
       <div
         className="relative rounded-2xl overflow-hidden mb-4 aspect-[4/3]"
@@ -42,6 +45,8 @@ const ProjectCard = ({ project }) => {
 };
 
 const ProjectsSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="py-24 bg-[#F5F3EE]">
       <div className="max-w-6xl mx-auto px-6">
@@ -57,9 +62,23 @@ const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-10">
-          {projectsData.map((project) => (
+          {projectsData.slice(0, 4).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
+        </div>
+
+        {/* View All Projects Button */}
+        <div className="flex justify-center mt-16">
+          <Button
+            onClick={() => navigate('/projects')}
+            className="group bg-[#1E3A5F] hover:bg-[#2A4A6F] text-white font-medium px-8 py-6 rounded-full transition-all duration-300 flex items-center gap-3 text-base"
+          >
+            View All Projects
+            <ArrowRight 
+              size={18} 
+              className="group-hover:translate-x-1 transition-transform duration-300" 
+            />
+          </Button>
         </div>
       </div>
     </section>
