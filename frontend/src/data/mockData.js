@@ -5,7 +5,7 @@ export const personalInfo = {
   title: "UX/UI Designer",
   tagline: "Turning ideas into clean, fast, and functional software.",
   email: "kshitijjadhav257@gmail.com",
-  location: "San Francisco, CA",
+  location: "Navi Mumbai, India",
   social: {
     github: "https://github.com/kshitij-create",
     instagram: "https://www.instagram.com/kshitij_257/",
