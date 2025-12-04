@@ -157,7 +157,7 @@ const ContactSection = () => {
                   className="w-12 h-12 flex items-center justify-center rounded-full bg-[#1E3A5F]/5 text-[#1E3A5F] hover:bg-[#1E3A5F] hover:text-white transition-all duration-300"
                 >
                   <a
-                    href={personalInfo.social.github}
+                    href={personalInfo.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 flex items-center justify-center rounded-full bg-[#1E3A5F]/5 text-[#1E3A5F] hover:bg-[#1E3A5F] hover:text-white transition-all duration-300"
