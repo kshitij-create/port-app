@@ -65,7 +65,7 @@ export const projectsData = [
     title: "NewsMonkey",
     description: "A front-end news app that fetches and displays news articles dynamically — highlights API integration, asynchronous JS handling, and UI for real-time content.",
     category: "Web App",
-    image: "../public/news.png",
+    image: "https://ibb.co/S76n5sG3",
     tags: ["UI Design", "Web Design", "Web App"],
     color: "#E4F5FF",
     link: "https://sky-rockets.netlify.app/"
@@ -75,7 +75,7 @@ export const projectsData = [
     title: "Web3 Messaging App",
     description: "A web3 messaging app that allows you to send and receive messages on the blockchain.",
     category: "UI Design",
-    image: "../public/App.png",
+    image: "https://ibb.co/yFcrMrq5",
     tags: ["UI Design", "Web Design", "Web3"],
     color: "#E4F5FF",
     link: "https://www.figma.com/design/0hNWGwAtxdOM9DbzA3WLe8/Web3-Messaging-App?node-id=188-5061&t=4PTMVJMzu1mpzAJY-1"
